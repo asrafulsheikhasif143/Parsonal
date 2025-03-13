@@ -1,63 +1,103 @@
+/* Smooth gradient background animation */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
-    background-image: url('me.gif'); /* Add your background image */
-    background-size: cover;
-     background-position: center; /* Centers the image */
-   /* background-repeat: no-repeat; /* Prevents repeating */
-    background-attachment: fixed; /* Keeps the image fixed when scrolling */
-    height: 100vh; /* Full height of the viewport */
-    margin: 0;
-    padding: 0;
     color: white;
+    background: linear-gradient(-45deg, #ff0066, #ff6600, #33ccff, #6600ff);
+    background-size: 400% 400%;
+    animation: gradientBG 8s infinite alternate;
 }
 
+/* Animated Gradient */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+/* Header Styling */
 header {
-    background: rgba(0, 0, 0, 0.59);
-    padding: 30px;
+    padding: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.6);
+    border-bottom: 4px solid white;
 }
 
+/* Animated Name */
+.name {
+    color: yellow;
+    font-size: 28px;
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px yellow; }
+    to { text-shadow: 0 0 20px white; }
+}
+
+/* Navigation Menu */
 nav {
     margin: 20px 0;
+    padding: 10px;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    margin: 10px;
-    font-size: 18px;
-}
-
-section {
-    padding: 50px;
-    background: rgba(36, 35, 34, 0.32);
-    margin: 10px;
-    border-radius: 10px;
-}
-#contact a {
     display: inline-block;
     padding: 10px 20px;
-    margin: 5px;
-    border: 2px solid white; /* White border */
-    border-radius: 5px; /* Rounded corners */
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
     text-decoration: none;
     color: white;
     font-size: 18px;
     transition: 0.3s ease-in-out;
 }
 
-#contact a:hover {
+nav a:hover {
     background-color: white;
     color: black;
 }
 
+/* Section Styling */
+section {
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.6);
+    margin: 20px;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+}
 
+/* Section Hover Effect */
+section:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Social Media Buttons */
+.social-links a {
+    display: inline-block;
+    padding: 15px 25px;
+    margin: 10px;
+    background: white;
+    color: black;
+    border-radius: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+    background: yellow;
+    color: black;
+    transform: scale(1.1);
+}
+
+/* Footer Styling */
 footer {
     padding: 20px;
     background: rgba(0, 0, 0, 0.7);
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    font-size: 16px;
+    border-top: 4px solid white;
 }
