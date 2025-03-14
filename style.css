@@ -122,7 +122,42 @@ section:hover {
     transform: scale(1.05);
     background: rgba(255, 255, 255, 0.2);
 }
+/* Swiper Container */
+.swiper-container {
+    height: 260px;
+    padding-left: 40px;
+    width: 90%;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+.swiper-wrapper {
+   height: 240px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Swiper Slide */
+.swiper-slide img {
+  padding-top: 20px;
+    height: 370%;
+    width: 300%;
+    align-items: center;
+    border-radius: 15px;
+}
 
+/* Swiper Pagination (Dots) */
+.swiper-pagination {
+    position: absolute;
+    bottom: 10px;
+}
+
+/* Navigation Arrows */
+.swiper-button-prev, .swiper-button-next {
+    color: white;
+}
 /* Social Media Buttons */
 .social-links a {
     display: inline-block;
