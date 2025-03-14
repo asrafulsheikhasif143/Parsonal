@@ -7,7 +7,7 @@ body {
     color: white;
     background: linear-gradient(-45deg, #ff0066, #ff6600, #33ccff, #6600ff);
     background-size: 400% 400%;
-    animation: gradientBG 8s infinite alternate;
+    animation: gradientBG 3s infinite alternate;
 }
 
 /* Animated Gradient */
@@ -40,6 +40,11 @@ header {
 }
 
 /* Animated Name */
+.name1 {
+    color: yellow;
+    font-size: 40px;
+    animation: glow 1s infinite alternate;
+}
 .name {
     color: yellow;
     font-size: 28px;
