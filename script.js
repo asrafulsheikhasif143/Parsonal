@@ -14,6 +14,12 @@ document.addEventListener("DOMContentLoaded", function() {
         
     }
 
+let count = 3000; 
+
+function increaseCount() {
+    count++;
+    document.getElementById('member-count').innerText = count;
+}
     window.addEventListener("scroll", animatePhotos);
     animatePhotos();
     setTimeout(() => {
