@@ -39,7 +39,9 @@ header {
     border-bottom: 4px solid white;
 }
 .container {
-    background: white;
+    background-color: #f0f0f0;
+    margin: 50px;
+    background: Yellow;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
