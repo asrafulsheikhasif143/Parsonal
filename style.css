@@ -38,11 +38,30 @@ header {
     background: rgba(0, 0, 0, 0.6);
     border-bottom: 4px solid white;
 }
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
 /* Animated Name */
 .name1 {
     color: yellow;
-    font-size: 40px;
+    font-size: 60px;
     animation: glow 1s infinite alternate;
 }
 .name {
