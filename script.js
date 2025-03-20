@@ -46,4 +46,18 @@ var swiper = new Swiper('.swiper-container', {
         prevEl: '.swiper-button-prev',
     },
 });
+// Get visitor count from localStorage
+let count = localStorage.getItem("visitorCount");
 
+// If no count exists, start from 1
+if (!count) {
+    count = 1;
+} else {
+    count = parseInt(count) + 1; // Increase count
+}
+
+// Store updated count
+localStorage.setItem("visitorCount", count);
+
+// Display count in footer
+document.getElementById("visitor-count").innerText = count;
